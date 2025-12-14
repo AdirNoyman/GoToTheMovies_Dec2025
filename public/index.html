@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies App - Discover Your Next Favorite Film</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <p>🎬 Movies</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="movies.html">Movies</a></li>
+          <li><a href="tv-shows.html">TV Shows</a></li>
+          <li><a href="watchlist.html">My Watchlist</a></li>
+        </ul>
+      </nav>
+      <div>
+        <input type="search" placeholder="Search movies..." />
+        <button>Sign In</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="all-sections">
+        <!-- Trending Now Section -->
+        <section class="vertical-scroll">
+          <h2>Trending Now</h2>
+          <ul>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg"
+                  alt="Movie Poster"
+                />
+                <p>The Shawshank Redemption</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
+                  alt="Movie Poster"
+                />
+                <p>The Godfather</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg"
+                  alt="Movie Poster"
+                />
+                <p>The Dark Knight</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg"
+                  alt="Movie Poster"
+                />
+                <p>Pulp Fiction</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg"
+                  alt="Movie Poster"
+                />
+                <p>Schindler's List</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/lxD5ak7BOoinRNehOCA85CQ8ubr.jpg"
+                  alt="Movie Poster"
+                />
+                <p>Inception</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/saHP97rTPS5eLmrLQEcANmKrsFl.jpg"
+                  alt="Movie Poster"
+                />
+                <p>Forrest Gump</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg"
+                  alt="Movie Poster"
+                />
+                <p>The Matrix</p>
+              </movie-item>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Popular Movies Section -->
+        <section class="vertical-scroll">
+          <h2>Popular Movies</h2>
+          <ul>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg"
+                  alt="Movie Poster"
+                />
+                <p>Star Wars</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg"
+                  alt="Movie Poster"
+                />
+                <p>The Lord of the Rings</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+                  alt="Movie Poster"
+                />
+                <p>Interstellar</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500///ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg"
+                  alt="Movie Poster"
+                />
+                <p>Gladiator</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg"
+                  alt="Movie Poster"
+                />
+                <p>The Green Mile</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500//1e23ofpVd8ZVQvZZ17NKnSIjvIR.jpg"
+                  alt="Movie Poster"
+                />
+                <p>The Silence of the Lambs</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg"
+                  alt="Movie Poster"
+                />
+                <p>Goodfellas</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/dAP5NpkrMMczir5dUPjRR6ywqgz.jpg"
+                  alt="Movie Poster"
+                />
+                <p>Den of Thieves</p>
+              </movie-item>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Action Movies Section -->
+        <section class="vertical-scroll">
+          <h2>Action & Adventure</h2>
+          <ul>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg"
+                  alt="Movie Poster"
+                />
+                <p>Die Hard</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg"
+                  alt="Movie Poster"
+                />
+                <p>Mad Max: Fury Road</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg"
+                  alt="Movie Poster"
+                />
+                <p>Avengers: Endgame</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500//l5uxY5m5OInWpcExIpKG6AR3rgL.jpg"
+                  alt="Movie Poster"
+                />
+                <p>Mission: Impossible</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500//jFTVD4XoWQTcg7wdyJKa8PEds5q.jpg"
+                  alt="Movie Poster"
+                />
+                <p>Terminator 2</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/xfWac8MTYDxujaxgPVcRD9yZaul.jpg"
+                  alt="Movie Poster"
+                />
+                <p>John Wick</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500//aP8swke3gmowbkfZ6lmNidu0y9p.jpg"
+                  alt="Movie Poster"
+                />
+                <p>The Bourne Identity</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/8WUVHemHFH2ZIP6NWkwlHWsyrEL.jpg"
+                  alt="Movie Poster"
+                />
+                <p>Casino Royale</p>
+              </movie-item>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Comedy Section -->
+        <section class="vertical-scroll">
+          <h2>Comedy Favorites</h2>
+          <ul>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/ek8e8txUyUwd2BNqj6lFEerJfbq.jpg"
+                  alt="Movie Poster"
+                />
+                <p>Superbad</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/gLhHHZUzeseRXShoDyC4VqLgsNv.jpg"
+                  alt="Movie Poster"
+                />
+                <p>The Grand Budapest Hotel</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/gCgt1WARPZaXnq523ySQEUKinCs.jpg"
+                  alt="Movie Poster"
+                />
+                <p>Groundhog Day</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/gNBCvtYyGPbjPCT1k3MvJuNuXR6.jpg"
+                  alt="Movie Poster"
+                />
+                <p>The Big Lebowski</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
+                  alt="Movie Poster"
+                />
+                <p>Back to the Future</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/5qcUGqWoWhEsoQwNUrtf3y3fcWn.jpg"
+                  alt="Movie Poster"
+                />
+                <p>The Hangover</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/7Q3efxd3AF1vQjlSxnlerSA7RzN.jpg"
+                  alt="Movie Poster"
+                />
+                <p>Airplane!</p>
+              </movie-item>
+            </li>
+            <li>
+              <movie-item>
+                <img
+                  src="https://image.tmdb.org/t/p/w500/gJtA7hYsBMQ7EM3sPBMUdBfU7a0.jpg"
+                  alt="Movie Poster"
+                />
+                <p>Bridesmaids</p>
+              </movie-item>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <h3>About Movies App</h3>
+        <p>Your ultimate destination for discovering and tracking movies.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <nav>
+          <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p>© 2025 Movies App. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
