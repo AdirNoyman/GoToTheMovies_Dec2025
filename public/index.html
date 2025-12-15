@@ -11,21 +11,30 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="images/icon.png" type="image/png" />
+    <link rel="manifest" href="app.webmanifest" />
+    <!-- 'module' indicates using Ecmma scripts and 'defer' tells the browser to download the JS file concurrently to the the browser downloading the other files and the JS execution will be called only after the browser finishes creating (parsing) the DOM. The use of 'defer' improves web performance -->
+    <script src="app.js" type="module" defer></script>
   </head>
   <body>
     <header>
-      <p>🎬 Movies</p>
+      <h1><img src="images/logo.png" height="35" alt="Movies" /></h1>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="movies.html">Movies</a></li>
-          <li><a href="tv-shows.html">TV Shows</a></li>
-          <li><a href="watchlist.html">My Watchlist</a></li>
+          <li><a class="navlink" href="index.html">Movies</a></li>
+          <li><a class="navlink" href="/account/favroties">Favorites</a></li>
+          <li><a class="navlink" href="/account/watchlist">Watchlist</a></li>
+          <li><a class="navlink" href="/account/">My Account</a></li>
         </ul>
       </nav>
       <div>
-        <input type="search" placeholder="Search movies..." />
-        <button>Sign In</button>
+        <form action="app.search(event)">
+          <input type="search" id="search-input" placeholder="Search movies..." />
+          <button>Go</button>
+        </form>
+      </div>
+      <div>
+        <button style="color: white; background: red">Login</button>
       </div>
     </header>
 

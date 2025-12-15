@@ -3,7 +3,8 @@ package handlers
 import (
 	"encoding/json"
 	"net/http"
-	"strconv"	
+	"strconv"
+
 	"devvvine.com/moviez/data"
 	"devvvine.com/moviez/logger"
 	"devvvine.com/moviez/models"
@@ -275,7 +276,7 @@ func (h *MovieHandler) SearchMovies(w http.ResponseWriter, r *http.Request) {
 
 func (h *MovieHandler) GetMovie(w http.ResponseWriter, r *http.Request) {
 	// Get ID from URL path
-	idStr := r.URL.Path[len("/api/movies/"):]
+	idStr := r.URL.Path[len("/api/movies/movie/"):]
 	id, ok := h.parseID(w, idStr)
 	if !ok {
 		return

@@ -65,8 +65,8 @@ func main() {
 	http.HandleFunc("/api/movies/top", movieHandler.GetTopMovies)
 	http.HandleFunc("/api/movies/random", movieHandler.GetRandomMovies)
 	http.HandleFunc("/api/movies/search", movieHandler.SearchMovies)
-	http.HandleFunc("/api/movies/", movieHandler.GetMovie) // expects ID in the path
-	http.HandleFunc("/api/genres", movieHandler.GetGenres)
+	http.HandleFunc("/api/movies/movie/", movieHandler.GetMovie) // expects ID in the path
+	http.HandleFunc("/api/movies/genres", movieHandler.GetGenres)
 	http.Handle("/", http.FileServer(http.Dir("public")))
 
 	port := os.Getenv("PORT")

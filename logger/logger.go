@@ -34,7 +34,7 @@ func NewLogger(logFilePath string) (*Logger, error) {
 // Info logs informational messages to stdout
 // (l *Logger) = pointer receiver, operates on the original Logger, not a copy
 func (l *Logger) Info(msg string) {
-	l.infoLogger.Printf("%s 🙄👉", msg)
+	l.infoLogger.Printf("🙄👉 %s", msg)
 }
 
 // Error logs error messages to file
