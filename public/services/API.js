@@ -3,9 +3,10 @@ export const API = {
 
   fetch: async (route, args) => {
     try {
-      const queryParams = args ? new URLSearchParams(args).toString() : "";
-      const response = await fetch(`${API.baseURL}/${route}`, queryParams ? `?${queryParams}` : "");
+      const queryParams = args ? new URLSearchParams(args).toString : '';
+      const response = await fetch(`${API.baseURL}/${route}?${queryParams}`);
       const result = await response.json();
+      console.log('Got result from server: ', result);
       return result;
     } catch (error) {
       console.error(`Error trying to fetch ${route}`, error);
@@ -22,7 +23,7 @@ export const API = {
   getMovieById: (id) => {
     return API.fetch(`movie/${id}`);
   },
-  searchMovies: (q,order,genre) => {
-    return API.fetch('search', {q,order,genre});
-  }
+  searchMovies: (q, order, genre) => {
+    return API.fetch('search', { q, order, genre });
+  },
 };
