@@ -17,4 +17,5 @@ export class MovieItem extends HTMLElement {
   }
 }
 
+// Register (inject...) the custom element for use by the DOM HTML
 customElements.define('movie-item', MovieItem);

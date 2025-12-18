@@ -11,7 +11,7 @@ export class HomePage extends HTMLElement {
         createMoviesCards(randomMovies, document.getElementById('random-movies'));
 
         function createMoviesCards(movies, ul) {
-            ul.innerHTML = '';
+            ul.textContent = '';
             movies.forEach(movie => {
                 const li = document.createElement('li');
                 li.appendChild(new MovieItem(movie));
@@ -33,4 +33,5 @@ export class HomePage extends HTMLElement {
     }
 }
 
+// Register (inject...) the custom element for use by the DOM HTML
 customElements.define('home-page', HomePage);
